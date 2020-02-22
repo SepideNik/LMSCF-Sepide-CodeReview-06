@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Food And Events</title>
+	<!-- Basic -->
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <!-- Mobile Metas -->
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="viewport" content="initial-scale=1, maximum-scale=1">  
+   <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <!-- Site CSS -->   
+   <link rel="stylesheet" type="text/css" href="css/index.css">
+   <!-- Font -->  
+   <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> 
+   
+   <!-- star -->
+    <link rel="stylesheet" href="css/star-rating.css" media="all" type="text/css"/>
+    <link rel="stylesheet" href="themes/krajee-fa/theme.css" media="all" type="text/css"/>    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="js/star-rating.js" type="text/javascript"></script>
+    
+    
+</head>
+<body>
+	<header class="header header_style_01">
+		<nav class="megamenu navbar navbar-default" data-spy="affix">          
+      <div id="navbar" class="container">
+        <ul class="nav navbar-nav navbar-left">
+          <li class="active"><a data-scroll href="#home">Home</a></li>
+          <li><a data-scroll href="#restaurants">Restaurants</a></li>
+          <li><a data-scroll href="#events">events</a></li>
+          <li><a data-scroll href="#about">About Us</a></li>             
+        </ul>
+      </div>            
+    </nav>
+  </header>
+  <div id="home" >
+    <div class="d-flex flex-row">    
+      <div class="home-img-left">
+       	<img src="img/list-header-left.png" alt="">
+      </div>
+      <div class="home-title">
+       	<h1>Wien</h1>
+        <pre>
+          Vienna Calling. Jede Woche frühstücken sich Barbara und Hannah durch die Karte eines neuen Frühstückslokales, damit ihr immer up to date seid und wisst, wohin man gehen muss und welches Lokal man auslassen kann ;-). Eiercheck inklusive! 
+        </pre>
+      </div>
+      <div class="home-img-center">          
+      </div>
+      <div class="home-img-right">
+       	<img src="img/list-header-right.png" alt="">
+      </div>
+   </div>     	
+  </div>
+  <div id="restaurants">
+    <div class="d-flex flex-row">    
+      <div class="title-left title">
+        <h1>Restaurants</h1>
+      </div>
+      <div class="title-center title">          
+      </div>
+      <div class="title-right title d-flex flex-row-reverse">
+        <p id="sortP" onclick="DoSort()">&#x25BC; Sort</p>
+      </div>
+    </div>
+    <div id="restaurantscontainer" class="mt-5 container">
+      <center>
+       <div id="resItems" class="row alert">
+        
+       </div>
+      </center>
+    </div>        
+  </div>
+  <div id="events">
+    <div class="d-flex flex-row">    
+      <div class="title-left title">
+        <h1>Events</h1>
+      </div>
+      <div class="title-center title">            
+      </div>
+      <div class="title-right title d-flex flex-row-reverse">
+        <p id="sortP" onclick="DoSort()">&#x25BC; Sort</p>
+      </div>
+    </div>
+    <div id="eventscontainer" class="row mt-5 container">
+       <center>
+          <div id="eveItems" class="row alert">
+        
+          </div>
+      </center>
+    </div>        
+  </div>
+  <div id="about" class="section wb">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                  <div class="message-box">
+                     <h2>About Us</h2>
+                     <h5>Frühstücken in Wien, Graz, Linz, Salzburg & Innsbruck mit den Frühstückerinnen!</h5>
+                  </div>
+                  <!-- end messagebox -->
+               </div>
+               <!-- end col -->
+               <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                  <div class="message-box">
+                     <p class="lead">Integer rutrum ligula eu dignissim laoreet. Pellentesque venenatis nibh sed tellus faucibus bibendum. Sed fermentum est vitae rhoncus molestie. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed vitae rutrum neque. Ut id erat sit amet libero bibendum aliquam. Donec ac egestas libero, eu bibendum risus. Phasellus et congue justo. </p>
+                     
+                  </div>
+                  <!-- end messagebox -->
+               </div>
+               <!-- end col -->
+            </div>
+            <!-- end row -->
+            <div class="row text-center about-row">
+               <div class="col-md-4 col-sm-12 col-xs-12">
+                  <div class="row">
+                     <div class="service-widget">
+                        
+                        <h3> unser ewiger Dank!</h3>
+                        <p>Eva Forstner, Silvia Gschwandtner, Julia Kantner, Kristin Posch, Sandra Raser, Nadine Reyhani, Angela Guttner, Miriam Rummel, Petra Siegele, Claudia Mitterschiffthaler, Constanze Weiß und Diana Topf.</p>
+                     </div>
+                     <!-- end service -->
+                  </div>
+               </div>
+               <div class="col-md-4 col-sm-12 col-xs-12">
+                  <div class="row">
+                     <div class="service-widget">
+                        
+                        <h3>With its Own Pool</h3>
+                       <h3>Der Mann im Hintergrund</h3>
+                       <p>Berät uns von Beginn an in allen technischen Lebenslagen & macht auch noch hübsche Fotos: Robert </p>
+                     </div>
+                     <!-- end service -->
+                  </div>
+               </div>
+               <div class="col-md-4 col-sm-12 col-xs-12">
+                  <div class="row">
+                     <div class="service-widget">
+                        
+                        <h3> unser ewiger Dank!</h3>
+                        <p>Eva Forstner, Silvia Gschwandtner, Julia Kantner, Kristin Posch, Sandra Raser, Nadine Reyhani, Angela Guttner, Miriam Rummel, Petra Siegele, Claudia Mitterschiffthaler, Constanze Weiß und Diana Topf.</p>
+                     </div>
+                     <!-- end service -->
+                  </div>
+               </div>
+            </div>
+            <!-- end row -->
+         </div>
+      </div>
+       <script src="js/all.js"></script>
+       <script src="js/events-json.js"></script>
+       <script src="js/restaurants-json.js"></script>
+       <script src="js/index.js"></script>
+      <!-- ALL PLUGINS --> 
+</body>
+</html>
